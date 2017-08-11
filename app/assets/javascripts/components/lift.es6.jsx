@@ -1,7 +1,7 @@
 class Lift extends React.Component {
   render () {
     return (
-      <div>
+      <div className="well">
         <div>Liftname: {this.props.liftname}</div>
         <div>Weightlifted: {this.props.weightlifted}</div>
         <div>Repsperformed: {this.props.repsperformed}</div>

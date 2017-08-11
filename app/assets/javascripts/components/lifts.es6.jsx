@@ -1,5 +1,3 @@
-/* import Lift from './lift.es6.jsx'*/
-
 class Lifts extends React.Component {
   render () {
     let userLifts;
@@ -7,20 +5,19 @@ class Lifts extends React.Component {
     if(this.props.lifts){
       userLifts = this.props.lifts.map(lift => {
         return (
-          <div key={lift.id}>
-            <div>Liftname: {lift.liftname}</div>
-            <div>Weightlifted: {lift.weightlifted}</div>
-            <div>Repsperformed: {lift.repsperformed}</div>
-            <div>Onerm: {lift.onerm}</div>
-          </div>
+          <Lift key={lift.id} liftname={lift.liftname}
+            weightlifted={lift.weightlifted}
+            repsperformed={lift.repsperformed}
+            onerm={lift.onerm}
+          />
         );
       });
     }
 
     return (
-      <div className="well">
-        {userLifts}
-      </div>
+      <section>
+      {userLifts}
+      </section>
     );
   }
 }
