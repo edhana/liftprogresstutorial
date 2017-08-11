@@ -1,12 +1,13 @@
 class Lift extends React.Component {
   render () {
     return (
-      <div className="well">
-        <div>Liftname: {this.props.liftname}</div>
-        <div>Weightlifted: {this.props.weightlifted}</div>
-        <div>Repsperformed: {this.props.repsperformed}</div>
-        <div>Onerm: {this.props.onerm}</div>
-      </div>
+      <tr>
+        <td>{this.props.date}</td>
+        <td>{this.props.liftname}</td>
+        <td>{this.props.weightlifted}</td>
+        <td>{this.props.repsperformed}</td>
+        <td>{this.props.onerm}</td>
+      </tr>
     );
   }
 }
