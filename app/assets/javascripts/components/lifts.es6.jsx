@@ -32,6 +32,7 @@ class Lifts extends React.Component {
             {userLifts}
           </tbody>
         </table>
+        <a href={this.props.newaddress} className="btn btn-default">Add new lift</a>
       </section>
     );
   }
