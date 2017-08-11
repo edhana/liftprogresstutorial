@@ -12,10 +12,8 @@
 //
 //= require rails-ujs
 //= require turbolinks
-//= require jquery
-//= require jquery_ujs
+//= require jquery3
 //= require tether
-//= require bootstrap-sprockets
 //= require react
 //= require react_ujs
 //= require components
